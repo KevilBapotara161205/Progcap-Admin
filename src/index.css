@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --brand-blue: #1038CC;
+  --deep-navy: #050126;
+  --accent-green: #61CE70;
+  --bg-page: #F4F5F7;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ── Layout ── */
+.ant-layout {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ant-layout-sider {
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+.ant-layout-content {
+  overflow-y: auto !important;
+}
+
+/* ── Page header ── */
+.page-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ── Compact table ── */
+.ant-table-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 8px 12px !important;
+}
+
+.ant-table-tbody > tr > td {
+  font-size: 12px !important;
+  padding: 6px 12px !important;
+}
+
+/* ── Compact form items ── */
+.ant-form-item {
+  margin-bottom: 12px;
+}
+
+/* ── Cards ── */
+.ant-card {
+  border-radius: 10px;
+}
+
+.ant-card-head {
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: 13px;
+}
+
+.ant-card-body {
+  padding: 14px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* ── Utility ── */
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand-blue);
+}
+
+.dark-card {
+  background-color: var(--deep-navy);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
